@@ -30,15 +30,23 @@ Based on what we learned with Pinout.xyz, I'll be handling translations as forks
 
 microbit.pinout.xyz includes a Makefile to help you set up a build environment and generate the .html files. For most build processes you should prepare the Python virtual environment with:
 
+### Install required libraries
+
+```
+pip install virtualenv pyyaml markdown
+```
+
+### Create and enter virtual environment
+
 ```
 make venv
 source venv/bin/activate
 ```
 
-Then you can build the HTML files with:
+### Build the HTML files 
 
 ```
-make html
+make pinout
 ```
 
 # Support this project
@@ -46,3 +54,7 @@ make html
 micro:bit pinout is a passion project put together in my free time, leverging my first-hand knowledge of designing, manufacturing and supporting micro:bit add-ons at Pimoroni.
 
 If you'd like to keep me fed, fuelled and beered while I slog away and contribute to hosting and domain costs please head on over to my Patreon and throw a dollar my way - https://www.patreon.com/gadgetoid - thank you!
+
+# With thanks to
+
+Micro:bit Educational Foundation for inspiration with the web design from their micro:bit classroom tool.
